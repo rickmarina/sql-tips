@@ -1,0 +1,7 @@
+
+DECLARE @Search varchar(255) = 'text'
+
+
+SELECT *
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME LIKE '%'+@Search+'%'
