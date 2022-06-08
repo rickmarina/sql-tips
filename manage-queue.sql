@@ -8,7 +8,7 @@
   FROM TR_UNBLOCKING_TASKS q WITH (ROWLOCK, READPAST, UPDLOCK)
   WHERE status = 0
   ORDER BY fecha
- )
+)
 UPDATE cte
   SET status = 1
 OUTPUT
